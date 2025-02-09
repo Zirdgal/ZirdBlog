@@ -1,0 +1,203 @@
+﻿:root{
+    --text: #0d131c;
+    --hover-text: #604661;
+    --background: #e0edff;
+    --primary: #80acff;
+    --secondary: #f5a8b8;
+    --accent: #9b8aff;
+}
+
+
+body {
+    margin:0;
+    padding:0;
+    background-color: var(--background);
+    background-image: linear-gradient(var(--accent), var(--secondary));
+    color: var(--text);
+    overflow: hidden;
+}
+
+a {
+    color: var(--text);
+}
+a:hover {
+    color: var(--hover-text);
+}
+
+nav {   
+    background-color: var(--accent);
+    background-image: linear-gradient(var(--primary), var(--accent));
+    height: 8vh;
+    width: 100vw;
+    font-size: 6vh;
+    border-bottom: solid 0.3vh var(--text);
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+section {
+    height: 91.75vh;
+    width: 100vw;
+}
+#about-me {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0vh 15vw 0vh 10vw;
+    width: 75vw
+}
+#about-me-img {
+    border: solid 0.3vh var(--text);
+    background-color: var(--secondary);
+    background-image: linear-gradient(var(--accent), var(--secondary));
+    border-radius: 15px;
+    height: 70vh;
+    width: 60vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    /* the fact I have made worse css spam is crazy */
+}
+.pfp {
+    border-radius: 15px;
+    height: 45vh;
+    border: solid 0.3vh var(--text);
+}
+.links {
+    font-size: 3vh;
+}
+
+
+#about-me-text {
+    margin-left: 5vw;
+    width: 90vw;
+    height: 60vh;
+    text-align: center;
+}
+
+#about-me-text-top {
+    border: solid 0.3vh var(--text);
+    background-color: var(--primary);
+    background-image: linear-gradient(var(--primary), var(--accent));
+    padding: 2.5vh;
+    border-radius: 15px;
+}
+#about-me-text-bot {
+    border: solid 0.3vh var(--text);
+    margin-top: 10vh;
+    padding: 2.5vh;
+    border-radius: 15px;
+    background-color: var(--accent);
+    background-image: linear-gradient(var(--accent), var(--secondary));
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+#about-me-text-bot-side {
+    display: flex;
+    flex-direction: row;
+}
+#previewArea {
+    padding: 1vh;
+    margin: 2vh;
+    height: 10vh;
+    width: 15vw;
+    font-size: 2vh;
+    border-radius: 15px;
+    border: solid 0.3vh var(--text);
+}
+#previewLink {
+    margin-top: 10vh;
+}
+
+
+
+/* ANIAMTIONS WOOOOOOOOOOOOOOOOOOOOOOOOOO*/
+
+@keyframes fadeOut {
+    0% {opacity: 1;}
+    100% {opacity: 0;}
+}
+
+@keyframes fadeIn {
+    0% { opacity: 0;}
+    100% {opacity: 1;}
+}
+
+/* Review page */
+
+#reviewTable {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+table, td, th{
+    padding: 3vh;
+    border: 2px dotted black;
+    border-collapse: collapse;
+}
+th {
+    font-size: 5vh;
+}
+td {
+    font-size: 4vh;
+}
+
+.proofSection {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.proofimg, iframe {
+    border-radius: 15px;
+}
+
+/* PORTFOILIOAIAOIAOIO :DDDDDDDDDDDDDDDDDDDDDDDDDDDD*/
+
+#portfolioSection {
+    width: 100vw;
+    display: grid;
+    grid-template-columns: auto auto;
+    padding: 10px;
+}
+
+.pr {
+    border: solid 0.3vh var(--text);
+    background-color: var(--secondary);
+    background-image: linear-gradient(var(--primary), var(--secondary));
+    height: 35vh;
+    width: 45vw;
+    border-radius: 15px;
+    padding: 2vh;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.pr-img {
+    height: 25vh;
+    width:auto;
+    border-radius: 15px;
+}
+
+.pr-content {
+    padding: 2vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+.pr-content p {
+    font-size: 2vh;
+}
